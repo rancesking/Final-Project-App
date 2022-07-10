@@ -12,7 +12,7 @@ const EditTodo = ({ todo }) => {
       const headers = { "Content-Type": "application/json" };
 
       const updated = await axios.put(
-        `http://dev-Internal-LB-2125122773.us-east-1.elb.amazonaws.com:3000/todos/${todo.todo_id}`,
+        `http://dev-Internal-LB-1254028191.us-east-1.elb.amazonaws.com:3000/todos/${todo.todo_id}`,
         body,
         {
           headers,
