@@ -10,7 +10,7 @@ const TodoInput = () => {
 
     try {
       const body = JSON.stringify({ description });
-      const response = await axios.post("http://dev-Internal-LB-187502717.us-east-1.elb.amazonaws.com:3000/todos", body, {
+      const response = await axios.post("http://dev-Internal-LB-2125122773.us-east-1.elb.amazonaws.com:3000/todos", body, {
         headers,
       });
       console.log(response);
