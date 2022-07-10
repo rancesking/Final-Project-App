@@ -3,9 +3,9 @@ name: ci-UI
 on:
   push:
     branches:
-      - 'Dev'
-      - 'Stage'
-      - 'Prod'
+      - 'dev'
+      - 'stage'
+      - 'prod'
     paths:
       - 'ui/**'
 jobs:
