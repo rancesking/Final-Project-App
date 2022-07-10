@@ -8,7 +8,7 @@ const TodoList = () => {
   // fetch all todos
   const getTodos = async () => {
     try {
-      const response = await axios.get("http://dev-Internal-LB-2125122773.us-east-1.elb.amazonaws.com:3000/todos");
+      const response = await axios.get("http://dev-Internal-LB-1254028191.us-east-1.elb.amazonaws.com:3000/todos");
       // const jsonData = await response.json();
 
       setTodos(response.data);
@@ -20,7 +20,7 @@ const TodoList = () => {
   //delete a todo
   const deleteTodo = async (id) => {
     try {
-      const deleted = await axios.delete(`http://dev-Internal-LB-2125122773.us-east-1.elb.amazonaws.com:3000/todos/${id}`);
+      const deleted = await axios.delete(`http://dev-Internal-LB-1254028191.us-east-1.elb.amazonaws.com:3000/todos/${id}`);
 
       setTodos(todos.filter((todo) => todo.todo_id !== id));
       console.log(deleted);
