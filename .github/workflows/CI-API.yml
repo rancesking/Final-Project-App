@@ -3,9 +3,9 @@ name: ci-api
 on:
   push:
     branches:
-      - 'Dev'
-      - 'Stage'
-      - 'Prod'
+      - 'dev'
+      - 'stage'
+      - 'prod'
     paths:
       - 'api/**'
 jobs:
